@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/set_dark_grey"
+    android:layout_height="match_parent"
+    tools:context=".adults.RecordingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+   <android.support.v4.view.ViewPager
+       android:layout_width="match_parent"
+       android:id="@+id/activity_recording_view_pager"
+       android:layout_height="200dp">
+
+   </android.support.v4.view.ViewPager>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/set_lemon_green"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="2dp" />
+
+            <LinearLayout
+          android:layout_width="match_parent"
+          android:orientation="horizontal"
+                android:gravity="center"
+          android:background="@drawable/buttons_view"
+          android:layout_height="wrap_content">
+
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/microphone"
+                android:id="@+id/recording_activity_btn_start_record"
+                android:layout_height="50dp" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/stop"
+                android:layout_height="50dp" />
+
+
+      </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/set_lemon_green"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_height="2dp" />
+</LinearLayout>
+            <FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_margin="10dp"
+        android:id="@+id/activity_recording_img_play_original_voice"
+        android:layout_height="100dp" />
+
+</FrameLayout>
+
+        </RelativeLayout>
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_recording_list_view_record_trucker"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+                android:layout_width="50dp"
+                android:layout_margin="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/left_arrow"
+                android:layout_height="50dp" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_margin="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/right_arrow"
+                android:layout_height="50dp" />
+</RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

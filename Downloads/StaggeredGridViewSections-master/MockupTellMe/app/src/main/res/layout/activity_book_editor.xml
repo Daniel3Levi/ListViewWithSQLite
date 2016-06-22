@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/set_dark_grey"
+    tools:context="com.heliconbooks.mockuptellme.adults.BookEditorActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:layout_width="60dp"
+        android:text="Return"
+        android:textSize="10sp"
+        android:textColor="@color/set_white"
+        android:onClick="closeBookEditorActivity"
+        android:background="@drawable/buttons_view"
+        android:layout_height="30dp" />
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/set_white"
+            android:id="@+id/book_editor_activity_book_nam_tv" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="200dp"
+            android:src="@drawable/the_little_prince"
+            android:scaleType="centerInside"
+            android:id="@+id/book_editor_activity_book_cover_img" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:background="@color/set_lemon_green"
+        android:layout_height="2dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="@drawable/buttons_view"
+        android:layout_height="wrap_content">
+
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+
+            android:background="@drawable/garbage"
+            />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:id="@+id/book_editor_activity_edit_btn"
+            android:background="@drawable/edit"
+            />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:id="@+id/book_editor_activity_add_btn"
+            android:background="@drawable/add"
+            />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/send"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:background="@color/set_lemon_green"
+        android:layout_height="2dp"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_centerInParent="true">
+
+
+                <com.heliconbooks.mockuptellme.custom.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/book_editor_activity_image_chose_profile"
+                    android:src="@drawable/profile_default"
+                    app:civ_border_color="@color/set_white"
+                    app:civ_border_width="2dp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+                    android:src="@drawable/highlight_frame" />
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="@color/set_white"
+                android:id="@+id/book_editor_activity_btn_camera"
+                android:background="@drawable/buttons_view"
+                android:padding="10dp"
+                android:text="Camera" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:id="@+id/book_editor_activity_btn_gallery"
+                android:background="@drawable/buttons_view"
+                android:padding="10dp"
+                android:textColor="@color/set_white"
+                android:text="Gallery" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:id="@+id/book_editor_activity_btn_delete_profile"
+                android:background="@drawable/buttons_view"
+                android:padding="10dp"
+                android:textColor="@color/set_white"
+                android:text="Delete" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</RelativeLayout>
